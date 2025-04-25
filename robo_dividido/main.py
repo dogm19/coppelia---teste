@@ -89,3 +89,11 @@ def main():
             else:
                 parede_livre_inicio = None
                 print("Parede livre, aguardando")
+        time.sleep(0.1)
+        
+    parar_motores(client_ID, left_motor, right_motor)
+    desconectar()
+    print("Desconectado do servidor.")
+
+if __name__ == "__main__":
+    main()
