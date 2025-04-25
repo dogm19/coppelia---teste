@@ -114,7 +114,6 @@ if clientID != -1:
                 if time.time() - desvio_inicio >= DESVIO_DURACAO:
                     estado = Estado.MOVIMENTO
                     print("Retorna ao movimento")
-                
 
         time.sleep(0.1)
 
@@ -125,6 +124,6 @@ if clientID != -1:
     sim.simxFinish(clientID)  # fecha a conexão com o simulador
 
 else:
-    print("Falha na Conexão com o simulador")
+    print("Falha na Conexao com o simulador")
 
 print("programa finalizado")
