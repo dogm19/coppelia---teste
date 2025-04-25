@@ -5,9 +5,8 @@ import time
 
 
 def iniciar_leitura_hokuyo(client_ID):
-    err, data = sim.simxGetIntegerSignal(
-        client_ID, 'Hokuyo', 1, sim.simx_opmode_streaming)
-    time.sleep(0.5)  # Aguarda um pouco para garantir que a leitura comece
+    sim.simxGetIntegerSignal(client_ID, 'Hokuyo', sim.simx_opmode_streaming)
+    time.sleep(0.1)  # Aguarda um pouco para garantir que a leitura comece
 
 
 def ler_dados_laser(client_ID):
